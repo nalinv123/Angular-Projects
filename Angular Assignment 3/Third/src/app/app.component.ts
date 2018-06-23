@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'app';
 
   fun() {
-    this.title = 'Inside fun()';
+    return 'Inside fun()';
   }
 }
