@@ -1,0 +1,8 @@
+<div>
+  <button (click)="getStudentDetails()">Retrive info</button>
+
+  <div *ngFor="let student of students">
+    {{student.Name}}
+    {{student.age}}
+  </div>
+</div>
