@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<button mat-stroked-button>Marvellous Infosystem</button>
+
+<div class="container">
+    <div class="form-control">
+        <mat-form-field>
+            <mat-select placeholder="Your city" [formControl]="cityControl" required>
+              <mat-option>--</mat-option>
+              <mat-option *ngFor="let city of cities" [value]="city">
+                {{city}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="cityControl.hasError('required')">Please choose an city</mat-error>
+          </mat-form-field>
+    </div>
+</div>
